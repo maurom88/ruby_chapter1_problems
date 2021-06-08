@@ -1,1 +1,1 @@
-# chapter1_assignments
+# Ruby chapter 1 problems
