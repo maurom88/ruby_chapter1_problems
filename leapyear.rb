@@ -13,4 +13,4 @@ leap = year % 4 == 0
 
 # Display result to user
 
-puts leap
+puts "#{year} #{leap ? 'is a leap year' : 'is not a leap year'}"
