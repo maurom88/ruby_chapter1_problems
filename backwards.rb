@@ -8,7 +8,6 @@ full_name = gets.chomp
 
 name = full_name.split(' ')
 
-puts "Your first name is #{name.first}"
-puts "Your last name is #{name.last}"
-
 # Display result to user
+
+puts "Hello #{name.last} #{name.first}"
