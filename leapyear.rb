@@ -9,4 +9,8 @@ end
 
 # Determine if year is leap
 
+leap = year % 4 == 0
+
 # Display result to user
+
+puts leap
