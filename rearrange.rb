@@ -11,14 +11,22 @@ while num == 0
   num = gets.chomp.to_i
 end  
 
-#Rearrange digits to create the largest possible number
+# Get absolute value of number entered by user and split digits
 
 digits = num.abs.digits
+
+# Rearrange digits to create the largest possible number
+# depending on whether the original number was positive or negative
 
 num > 0 ?
   (sorted_digits = digits.sort { |a, b| b <=> a }) :
   (sorted_digits = digits.sort)
 
+
+
 # Display result to user
 
-puts sorted_digits
+num > 0 ?
+  (puts sorted_digits.join.to_i) :
+  (puts 0 - sorted_digits.join.to_i)
+
