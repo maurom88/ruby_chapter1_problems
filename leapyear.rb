@@ -8,8 +8,11 @@ while year <= 0
 end  
 
 # Determine if year is leap
+# A year is a leap year if it is divisible by 4
+# if it is divisible by 100, it must also be divisible by 400
 
-leap = year % 4 == 0
+
+leap = (year % 4 == 0 && year % 100 != 0 ) || (year % 100 == 0 && year % 400 == 0)
 
 # Display result to user
 
