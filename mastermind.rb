@@ -34,4 +34,4 @@ guesses += 1
 
 # Display message if they guess the code
 
-guessed ? (puts "Congratulations! You guessed the code: #{code}") : nil
+guessed ? (puts "Congratulations! You guessed the code: #{code}. It took you #{guesses} tries.") : nil
