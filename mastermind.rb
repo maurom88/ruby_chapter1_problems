@@ -10,6 +10,10 @@ end
 
 guessed = false
 
+# Create a guesses counter
+
+guesses = 0
+
 # Get input from the user
 
 print "Enter your guess: "
@@ -21,5 +25,7 @@ guess = gets.chomp
 guessed = code == guess
 
 # Increment guesses counter
+
+guesses += 1
 
 # Display how many digits they guessed right
