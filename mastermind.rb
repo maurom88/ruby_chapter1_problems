@@ -22,13 +22,30 @@ print "Enter your guess: "
 
 guess = gets.chomp
 
-# Determine how many digits they guessed
+# Determine if they guessed at first try
 
 guessed = code == guess
 
 # Increment guesses counter
 
 guesses += 1
+
+# Keep trying until they guess the code
+
+until guessed
+    print "Try again: "
+    guess = gets.chomp
+
+    # Determine if they guessed the code
+
+    guessed = code == guess
+
+    # Increment guesses counter
+
+    guesses += 1
+
+    # Determine how many digits they guessed
+end
 
 # Display how many digits they guessed right
 
