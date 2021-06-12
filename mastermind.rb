@@ -6,6 +6,8 @@ while code.length < 4
     code += (rand(6) + 1).to_s
 end
 
+puts code
+
 # Create a variable to determine if the user guessed the code
 
 guessed = false
@@ -29,3 +31,7 @@ guessed = code == guess
 guesses += 1
 
 # Display how many digits they guessed right
+
+# Display message if they guess the code
+
+guessed ? "Congratulations! You guessed the code: #{code}" : nil
