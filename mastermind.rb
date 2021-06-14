@@ -30,6 +30,17 @@ guessed = code == guess
 
 guesses += 1
 
+# Determine how many digits they guessed
+i = 0
+while i <= code.length
+    if code[i] == guess[i]
+        puts "X"
+    elsif code.include? guess[i]
+        print "x"
+    end
+    i += 1
+end
+
 # Keep trying until they guess the code
 
 until guessed
@@ -45,6 +56,16 @@ until guessed
     guesses += 1
 
     # Determine how many digits they guessed
+    i = 0
+    while i <= code.length
+        if code[i] == guess[i]
+            print "X"
+        elsif code.include? guess[i]
+            print "x"
+        end
+        i += 1
+    end
+    puts ""
 end
 
 # Display how many digits they guessed right
