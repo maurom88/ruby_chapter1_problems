@@ -47,9 +47,9 @@ until guessed
         i += 1
     end
     puts ""
+    puts "-----------------"
+    puts ""
 end
-
-# Display how many digits they guessed right
 
 # Display message if they guess the code
 
