@@ -19,13 +19,18 @@ guesses = 0
 # Let user try to guess the code
 
 until guessed
+    guess = 0
     # Ask for and get input from user
     if guesses == 0
-        print "Enter your guess: "
-        guess = gets.chomp
+        while guess == 0 || guess.length != 4
+            print "Enter your guess: "
+            guess = gets.chomp
+        end  
     else
-        print "Try again: "
-        guess = gets.chomp
+        while guess == 0 || guess.length!= 4
+            print "Try again: "
+            guess = gets.chomp
+          end  
     end
 
     # Determine if they guessed the code
