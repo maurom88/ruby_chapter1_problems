@@ -16,36 +16,17 @@ guessed = false
 
 guesses = 0
 
-# Get input from the user
-
-print "Enter your guess: "
-
-guess = gets.chomp
-
-# Determine if they guessed at first try
-
-guessed = code == guess
-
-# Increment guesses counter
-
-guesses += 1
-
-# Determine how many digits they guessed
-i = 0
-while i <= code.length
-    if code[i] == guess[i]
-        puts "X"
-    elsif code.include? guess[i]
-        print "x"
-    end
-    i += 1
-end
-
-# Keep trying until they guess the code
+# Let user try to guess the code
 
 until guessed
-    print "Try again: "
-    guess = gets.chomp
+    # Ask for and get input from user
+    if guesses == 0
+        print "Enter your guess: "
+        guess = gets.chomp
+    else
+        print "Try again: "
+        guess = gets.chomp
+    end
 
     # Determine if they guessed the code
 
