@@ -38,11 +38,11 @@ until guessed
 
     # Determine how many digits they guessed
     i = 0
-    while i <= code.length
+    while i < code.length
         if code[i] == guess[i]
-            print "X"
+                print "X"
         elsif code.include? guess[i]
-            print "x"
+                print "x"
         end
         i += 1
     end
