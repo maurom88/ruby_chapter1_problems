@@ -30,7 +30,7 @@ until guessed
         while guess == 0 || guess.length!= 4
             print "Try again: "
             guess = gets.chomp
-          end  
+        end  
     end
 
     # Determine if they guessed the code
